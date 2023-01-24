@@ -45,6 +45,13 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import url('https://fonts.cdnfonts.com/css/assistant');
+
+* {
+  font-family: 'Assistant', sans-serif;
+  font-weight: lighter;
+}
+
 .paginaDeLogin {
   display: flex;
   margin: -8px;

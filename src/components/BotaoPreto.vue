@@ -1,5 +1,5 @@
 <template>
-  <button class="{{ classeDoBotao }}">{{ tituloDoBotao }}</button>
+  <button class="botaoPreto">{{ tituloDoBotao }}</button>
 </template>
 
 <script lang="ts">
@@ -8,10 +8,6 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "BotaoFundoPreto",
   props: {
-    classeDoBotao: {
-      type: String,
-      required: true,
-    },
     tituloDoBotao: {
       type: String,
       required: true,
@@ -21,10 +17,13 @@ export default defineComponent({
 </script>
 
 <style scoped>
-button {
+.botaoPreto {
+  margin-top: 1rem;
+  border: none;
   width: 10rem;
   height: 3rem;
-  color: #000000;
+  color: #ffffff;
+  background-color: #000;
   border-radius: 41px;
 }
 </style>

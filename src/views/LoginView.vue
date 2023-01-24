@@ -1,7 +1,19 @@
 <template>
-  <main class="container">
+  <main class="paginaDeLogin">
     <div class="login">
-      <BotaoPreto :classeDoBotao="'botaoLogin'" :tituloDoBotao="'Entrar'" />
+      <form class="formularioLogin">
+        <input
+          class="campoDoLogin"
+          type="text"
+          placeholder="Digite seu E-Mail, CPF ou PIS de cadastro"
+        />
+        <input
+          class="campoDaSenha"
+          type="password"
+          placeholder="Digite sua Senha"
+        />
+      </form>
+      <BotaoPreto class="botaoEntrar" :tituloDoBotao="'Entrar'" />
     </div>
     <div class="novoAqui"></div>
   </main>
@@ -19,12 +31,33 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.container {
+.paginaDeLogin {
   display: flex;
   margin: -8px;
 }
 
+.campoDoLogin,
+.campoDaSenha {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 41px;
+  border: none;
+}
+
+.formularioLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60rem;
   height: 100vh;
   background-color: #20bef0;

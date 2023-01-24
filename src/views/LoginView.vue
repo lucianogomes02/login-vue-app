@@ -19,12 +19,16 @@
       <h4>Entre na sua conta utilizando suas redes sociais</h4>
 
       <div class="loginComRedesSociais">
-        <button class="redeSocial" type="submit"></button>
+        <button class="redeSocial"></button>
         <button class="redeSocial"></button>
         <button class="redeSocial"></button>
       </div>
     </div>
-    <div class="novoAqui"></div>
+    <div class="novoAqui">
+      <h1>Novo por aqui?</h1>
+      <h4>Faça o seu cadastro aqui</h4>
+      <BotaoPreto class="botaoCadastro" :tituloDoBotao="'Cadastre-se'" />
+    </div>
   </main>
 </template>
 
@@ -53,7 +57,6 @@ export default defineComponent({
   width: 60rem;
   height: 100vh;
   background-color: #20bef0;
-  opacity: 38%;
 }
 
 .formularioLogin {
@@ -86,6 +89,10 @@ export default defineComponent({
 }
 
 .novoAqui {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 61rem;
   height: 100vh;
   background-color: #00a3ff;

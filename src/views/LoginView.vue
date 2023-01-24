@@ -19,9 +19,9 @@
       <h4>Entre na sua conta utilizando suas redes sociais</h4>
 
       <div class="loginComRedesSociais">
-        <button class="redeSocial"></button>
-        <button class="redeSocial"></button>
-        <button class="redeSocial"></button>
+        <BotaoRedeSocial />
+        <BotaoRedeSocial />
+        <BotaoRedeSocial />
       </div>
     </div>
     <div class="novoAqui">
@@ -35,10 +35,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import BotaoPreto from "../components/BotaoPreto.vue";
+import BotaoRedeSocial from "../components/BotaoRedeSocial.vue"
 
 export default defineComponent({
   name: "LoginView",
-  components: { BotaoPreto },
+  components: { BotaoPreto, BotaoRedeSocial },
   data() {},
 });
 </script>
@@ -78,14 +79,6 @@ export default defineComponent({
 
 .loginComRedesSociais {
   display: flex;
-}
-
-.redeSocial {
-  border: none;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 90px;
-  margin: 0.3rem;
 }
 
 .novoAqui {

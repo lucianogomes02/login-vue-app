@@ -35,7 +35,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import BotaoPreto from "../components/BotaoPreto.vue";
-import BotaoRedeSocial from "../components/BotaoRedeSocial.vue"
+import BotaoRedeSocial from "../components/BotaoRedeSocial.vue";
 
 export default defineComponent({
   name: "LoginView",
@@ -57,7 +57,7 @@ export default defineComponent({
   align-items: center;
   width: 60rem;
   height: 100vh;
-  background-color: #8FDDF5;
+  background-color: #8fddf5;
 }
 
 .formularioLogin {

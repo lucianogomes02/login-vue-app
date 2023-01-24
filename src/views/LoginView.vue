@@ -1,6 +1,7 @@
 <template>
   <main class="paginaDeLogin">
     <div class="login">
+      <h1>Entre na sua conta</h1>
       <form class="formularioLogin">
         <input
           class="campoDoLogin"
@@ -14,6 +15,14 @@
         />
       </form>
       <BotaoPreto class="botaoEntrar" :tituloDoBotao="'Entrar'" />
+
+      <h4>Entre na sua conta utilizando suas redes sociais</h4>
+
+      <div class="loginComRedesSociais">
+        <button class="redeSocial" type="submit"></button>
+        <button class="redeSocial"></button>
+        <button class="redeSocial"></button>
+      </div>
     </div>
     <div class="novoAqui"></div>
   </main>
@@ -36,6 +45,24 @@ export default defineComponent({
   margin: -8px;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 100vh;
+  background-color: #20bef0;
+  opacity: 38%;
+}
+
+.formularioLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .campoDoLogin,
 .campoDaSenha {
   text-align: center;
@@ -46,22 +73,16 @@ export default defineComponent({
   border: none;
 }
 
-.formularioLogin {
+.loginComRedesSociais {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60rem;
-  height: 100vh;
-  background-color: #20bef0;
-  opacity: 38%;
+.redeSocial {
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 90px;
+  margin: 0.3rem;
 }
 
 .novoAqui {

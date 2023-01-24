@@ -56,7 +56,7 @@ export default defineComponent({
   align-items: center;
   width: 60rem;
   height: 100vh;
-  background-color: #20bef0;
+  background-color: #8FDDF5;
 }
 
 .formularioLogin {

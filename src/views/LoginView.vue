@@ -19,9 +19,9 @@
       <h4>Entre na sua conta utilizando suas redes sociais</h4>
 
       <div class="loginComRedesSociais">
-        <BotaoRedeSocial />
-        <BotaoRedeSocial />
-        <BotaoRedeSocial />
+        <BotaoRedeSocial class="botaoLoginFacebook" :redeSocial="'facebook'"/>
+        <BotaoRedeSocial class="botaoLoginGoogle" :redeSocial="'google'"/>
+        <BotaoRedeSocial class="botaoLoginGitHub" :redeSocial="'github'"/>
       </div>
     </div>
     <div class="novoAqui">
@@ -82,6 +82,7 @@ export default defineComponent({
   height: 2rem;
   border-radius: 41px;
   border: none;
+  outline: none;
 }
 
 .loginComRedesSociais {

@@ -1,6 +1,6 @@
 <template>
   <button class="redeSocial">
-    <font-awesome-icon :icon="['fab', redeSocial]" class="icon alt"/>
+    <font-awesome-icon :icon="['fab', redeSocial]" class="icon alt" />
   </button>
 </template>
 

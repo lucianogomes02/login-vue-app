@@ -6,7 +6,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "BotaoFundoPreto",
+  name: "BotaoPreto",
   props: {
     tituloDoBotao: {
       type: String,

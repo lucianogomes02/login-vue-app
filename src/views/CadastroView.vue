@@ -1,9 +1,8 @@
 <template>
-    <main class="containerCadastro">
-        <Cabecalho></Cabecalho>
-        <body class="cadastro"></body>
-    </main>
-    
+  <main class="containerCadastro">
+    <Cabecalho></Cabecalho>
+    <body class="cadastro"></body>
+  </main>
 </template>
 
 <script lang="ts">
@@ -17,19 +16,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.containerCadastro {
-  display: flex;
-  margin: -8px;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .cadastro {
-    background: #8fddf5;
-    width: 100%;
-    height: 95.7vh;
-    margin: -1px;
+  background: #8fddf5;
+  width: auto;
+  height: 95.2vh;
+  margin: -8px;
 }
 </style>

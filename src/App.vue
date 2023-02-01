@@ -12,8 +12,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-body {
-  margin: -8px;
-}
-</style>
+<style scoped></style>

@@ -46,14 +46,17 @@ export default defineComponent({
 }
 
 .bemVindo {
-  margin-top: 1.8rem;
-  margin-left: 42%;
+  margin-top: 2.5rem;
+  margin-left: 45%;
+  font-size: 2.5ch;
 }
 
 .botaoDeVoltar {
-  width: 5rem;
-  height: 1.5rem;
-  margin-bottom: 0.5rem;
-  margin-right: 1rem;
+  width: 6rem;
+  height: 2rem;
+  margin-bottom: 0.1rem;
+  margin-right: 1.5rem;
+
+  font-size: 2ch;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <main class="containerCadastro">
+  <main class="container__cadastro">
     <Cabecalho></Cabecalho>
     <body class="cadastro">
-      <form class="formularioCadastro">
-        <div class="informacoesDoUsuario">
+      <form class="formulario__cadastro">
+        <div class="informacoes__do__usuario">
           <input class="nome" type="text" />
           <input class="sobrenome" type="text" />
           <input class="email" type="email" />
@@ -11,7 +11,7 @@
           <input class="pis" type="text" />
           <input class="senha" type="password" />
         </div>
-        <div class="enderecoDoUsuario">
+        <div class="endereco__do__usuario">
           <input class="cep" type="text" />
           <input class="logradouro" type="text" />
           <input class="numero" type="text" />

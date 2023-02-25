@@ -2,7 +2,7 @@
   <main class="containerCadastro">
     <Cabecalho></Cabecalho>
     <body class="cadastro">
-      <div class="formularioCadastro">
+      <form class="formularioCadastro">
         <div class="informacoesDoUsuario">
           <input class="nome" type="text" />
           <input class="sobrenome" type="text" />
@@ -20,7 +20,7 @@
           <input class="estado" type="text" />
           <input class="pais" type="text" />
         </div>
-      </div>
+      </form>
     </body>
   </main>
 </template>

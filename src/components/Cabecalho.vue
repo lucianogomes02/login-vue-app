@@ -1,9 +1,9 @@
 <template>
   <header class="cabecalho">
-    <nav class="barraDeNavegacao">
-      <h4 class="bemVindo">Bem-vindo, visitante</h4>
+    <nav class="barra__de__navegacao">
+      <h4 class="bem__vindo">Bem-vindo, visitante</h4>
       <BotaoPreto
-        class="botaoDeVoltar"
+        class="botao__de__voltar"
         :titulo-do-botao="'Voltar'"
       ></BotaoPreto>
     </nav>
@@ -35,7 +35,7 @@ export default defineComponent({
   margin: -8px;
 }
 
-.barraDeNavegacao {
+.barra__de__navegacao {
   width: 100%;
   height: 4vh;
 
@@ -43,15 +43,16 @@ export default defineComponent({
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 
-.bemVindo {
+.bem__vindo {
   margin-top: 2.5rem;
   margin-left: 45%;
   font-size: 2.5ch;
 }
 
-.botaoDeVoltar {
+.botao__de__voltar {
   width: 6rem;
   height: 2rem;
   margin-bottom: 0.1rem;

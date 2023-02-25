@@ -3,23 +3,23 @@
     <Cabecalho></Cabecalho>
     <body class="cadastro">
       <div class="formularioCadastro">
-          <div class="informacoesDoUsuario">
-            <input class="nome" type="text" />
-            <input class="sobrenome" type="text" />
-            <input class="email" type="email" />
-            <input class="cpf" type="text" />
-            <input class="pis" type="text" />
-            <input class="senha" type="password" />
-          </div>
-          <div class="enderecoDoUsuario">
-            <input class="cep" type="text" />
-            <input class="logradouro" type="text" />
-            <input class="numero" type="text" />
-            <input class="complemento" type="text" />
-            <input class="municipio" type="text" />
-            <input class="estado" type="text" />
-            <input class="pais" type="text" />
-          </div>
+        <div class="informacoesDoUsuario">
+          <input class="nome" type="text" />
+          <input class="sobrenome" type="text" />
+          <input class="email" type="email" />
+          <input class="cpf" type="text" />
+          <input class="pis" type="text" />
+          <input class="senha" type="password" />
+        </div>
+        <div class="enderecoDoUsuario">
+          <input class="cep" type="text" />
+          <input class="logradouro" type="text" />
+          <input class="numero" type="text" />
+          <input class="complemento" type="text" />
+          <input class="municipio" type="text" />
+          <input class="estado" type="text" />
+          <input class="pais" type="text" />
+        </div>
       </div>
     </body>
   </main>

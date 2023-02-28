@@ -5,21 +5,25 @@
       <form class="formulario__cadastro">
         <h2 class="titulo__cadastro">Preencha suas informações de cadastro</h2>
         <div class="informacoes__do__usuario">
-          <input class="nome" type="text" />
-          <input class="sobrenome" type="text" />
-          <input class="email" type="email" />
-          <input class="cpf" type="text" />
-          <input class="pis" type="text" />
-          <input class="senha" type="password" />
+          <input class="nome" type="text" placeholder="Nome" />
+          <input class="sobrenome" type="text" placeholder="Sobrenome" />
+          <input class="email" type="email" placeholder="E-mail" />
+          <input class="cpf" type="text" placeholder="CPF" />
+          <input class="pis" type="text" placeholder="PIS" />
+          <input class="senha" type="password" placeholder="Senha" />
         </div>
         <div class="endereco__do__usuario">
-          <input class="cep" type="text" />
-          <input class="logradouro" type="text" />
-          <input class="numero" type="text" />
-          <input class="complemento" type="text" />
-          <input class="municipio" type="text" />
-          <input class="estado" type="text" />
-          <input class="pais" type="text" />
+          <input class="cep" type="text" placeholder="CEP" />
+          <input
+            class="logradouro"
+            type="text"
+            placeholder="Logradouro (Rua, Av, Travessa)"
+          />
+          <input class="numero" type="text" placeholder="Número" />
+          <input class="complemento" type="text" placeholder="Complemento" />
+          <input class="municipio" type="text" placeholder="Município" />
+          <input class="estado" type="text" placeholder="Estado" />
+          <input class="pais" type="text" placeholder="País" />
         </div>
       </form>
     </section>
@@ -62,15 +66,15 @@ export default defineComponent({
 .formulario__cadastro {
   margin-left: 3rem;
   margin-bottom: 10rem;
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.informacoes__do__usuario {
+.informacoes__do__usuario,
+.endereco__do__usuario {
   margin-bottom: 3rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .titulo__cadastro {

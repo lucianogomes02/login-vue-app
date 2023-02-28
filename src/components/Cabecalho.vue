@@ -30,7 +30,7 @@ export default defineComponent({
 
 .cabecalho {
   background: #00a3ff;
-  width: auto;
+  width: 120.5rem;
   height: 7vh;
   margin: -8px;
 }

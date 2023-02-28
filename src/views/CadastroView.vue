@@ -37,9 +37,24 @@ export default defineComponent({
 
 <style scoped>
 .cadastro {
+  height: 0;
+  width: 0;
+}
+
+.container__cadastro {
   background: #8fddf5;
-  width: auto;
-  height: 95.2vh;
+  width: 120rem;
+  height: 61rem;
   margin: -8px;
+}
+
+input {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 41px;
+  border: none;
+  outline: none;
 }
 </style>

@@ -5,25 +5,21 @@
       <form class="formulario__cadastro">
         <h2 class="titulo__cadastro">Preencha suas informações de cadastro</h2>
         <div class="informacoes__do__usuario">
-          <input class="nome" type="text" placeholder="Nome" />
-          <input class="sobrenome" type="text" placeholder="Sobrenome" />
-          <input class="email" type="email" placeholder="E-mail" />
-          <input class="cpf" type="text" placeholder="CPF" />
-          <input class="pis" type="text" placeholder="PIS" />
-          <input class="senha" type="password" placeholder="Senha" />
+          <input class="nome" type="text" placeholder="Nome"/>
+          <input class="sobrenome" type="text" placeholder="Sobrenome"/>
+          <input class="email" type="email" placeholder="E-mail"/>
+          <input class="cpf" type="text" placeholder="CPF"/>
+          <input class="pis" type="text" placeholder="PIS"/>
+          <input class="senha" type="password" placeholder="Senha"/>
         </div>
         <div class="endereco__do__usuario">
-          <input class="cep" type="text" placeholder="CEP" />
-          <input
-            class="logradouro"
-            type="text"
-            placeholder="Logradouro (Rua, Av, Travessa)"
-          />
-          <input class="numero" type="text" placeholder="Número" />
-          <input class="complemento" type="text" placeholder="Complemento" />
-          <input class="municipio" type="text" placeholder="Município" />
-          <input class="estado" type="text" placeholder="Estado" />
-          <input class="pais" type="text" placeholder="País" />
+          <input class="cep" type="text" placeholder="CEP"/>
+          <input class="logradouro" type="text" placeholder="Logradouro (Rua, Av, Travessa)"/>
+          <input class="numero" type="text" placeholder="Número"/>
+          <input class="complemento" type="text" placeholder="Complemento"/>
+          <input class="municipio" type="text" placeholder="Município"/>
+          <input class="estado" type="text" placeholder="Estado"/>
+          <input class="pais" type="text" placeholder="País"/>
         </div>
       </form>
     </section>
@@ -68,8 +64,7 @@ export default defineComponent({
   margin-bottom: 10rem;
 }
 
-.informacoes__do__usuario,
-.endereco__do__usuario {
+.informacoes__do__usuario, .endereco__do__usuario {
   margin-bottom: 3rem;
 
   display: flex;

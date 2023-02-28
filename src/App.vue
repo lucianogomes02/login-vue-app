@@ -12,4 +12,12 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+@import url("https://fonts.cdnfonts.com/css/assistant");
+
+* {
+  font-family: "Assistant", sans-serif;
+  font-weight: 350;
+}
+
+</style>

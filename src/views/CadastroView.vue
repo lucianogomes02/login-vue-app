@@ -1,8 +1,9 @@
 <template>
   <main class="container__cadastro">
     <Cabecalho></Cabecalho>
-    <body class="cadastro">
+    <section class="cadastro">
       <form class="formulario__cadastro">
+        <h2 class="titulo__cadastro">Preencha suas informações de cadastro</h2>
         <div class="informacoes__do__usuario">
           <input class="nome" type="text" />
           <input class="sobrenome" type="text" />
@@ -21,7 +22,7 @@
           <input class="pais" type="text" />
         </div>
       </form>
-    </body>
+    </section>
   </main>
 </template>
 
@@ -36,9 +37,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.cadastro {
-  height: 0;
-  width: 0;
+@import url("https://fonts.cdnfonts.com/css/assistant");
+
+* {
+  font-family: "Assistant", sans-serif;
+  font-weight: 350;
 }
 
 .container__cadastro {
@@ -46,6 +49,33 @@ export default defineComponent({
   width: 120rem;
   height: 61rem;
   margin: -8px;
+}
+
+.cadastro {
+  width: 120rem;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.formulario__cadastro {
+  margin-left: 3rem;
+  margin-bottom: 10rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.informacoes__do__usuario {
+  margin-bottom: 3rem;
+}
+
+.titulo__cadastro {
+  margin-left: 44rem;
+  margin-bottom: 5rem;
 }
 
 input {
@@ -56,5 +86,6 @@ input {
   border-radius: 41px;
   border: none;
   outline: none;
+  margin: 1rem;
 }
 </style>

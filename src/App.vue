@@ -19,5 +19,4 @@ export default defineComponent({
   font-family: "Assistant", sans-serif;
   font-weight: 350;
 }
-
 </style>

@@ -30,6 +30,7 @@ export default defineComponent({
   width: 120.5rem;
   height: 7vh;
   margin: -8px;
+  position: fixed;
 }
 
 .barra__de__navegacao {
@@ -43,7 +44,7 @@ export default defineComponent({
 }
 
 .bem__vindo {
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
   margin-left: 45%;
   font-size: 2.5ch;
 }
@@ -51,6 +52,7 @@ export default defineComponent({
 .botao__de__voltar {
   width: 6rem;
   height: 2rem;
+  margin-top: 2rem;
   margin-bottom: 0.1rem;
   margin-right: 1.5rem;
 

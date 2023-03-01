@@ -149,6 +149,10 @@ export default defineComponent({
   align-items: flex-start;
 }
 
+.botao__cadastrar {
+  margin-left: 97rem;
+}
+
 label {
   padding-left: 1.5rem;
 }

@@ -5,25 +5,75 @@
       <form class="formulario__cadastro">
         <h2 class="titulo__cadastro">Preencha suas informações de cadastro</h2>
         <div class="informacoes__do__usuario">
-          <input class="nome" type="text" placeholder="Nome" />
-          <input class="sobrenome" type="text" placeholder="Sobrenome" />
-          <input class="email" type="email" placeholder="E-mail" />
-          <input class="cpf" type="text" placeholder="CPF" />
-          <input class="pis" type="text" placeholder="PIS" />
-          <input class="senha" type="password" placeholder="Senha" />
+          <div class="informacao__do__usuario">
+            <input id="nome" type="text" placeholder="Nome" />
+            <label for="nome">Nome</label>
+          </div>
+
+          <div class="informacao__do__usuario">
+            <input id="sobrenome" type="text" placeholder="Sobrenome" />
+            <label for="sobrenome">Sobrenome</label>
+          </div>
+
+          <div class="informacao__do__usuario">
+            <input id="email" type="email" placeholder="E-mail" />
+            <label for="email">E-mail</label>
+          </div>
+
+          <div class="informacao__do__usuario">
+            <input id="cpf" type="text" placeholder="CPF" />
+            <label for="cpf">CPF</label>
+          </div>
+
+          <div class="informacao__do__usuario">
+            <input id="pis" type="text" placeholder="PIS" />
+            <label for="pis">PIS</label>
+          </div>
+
+          <div class="informacao__do__usuario">
+            <input id="senha" type="password" placeholder="Senha" />
+            <label for="senha">Senha</label>
+          </div>
         </div>
         <div class="endereco__do__usuario">
-          <input class="cep" type="text" placeholder="CEP" />
-          <input
-            class="logradouro"
-            type="text"
-            placeholder="Logradouro (Rua, Av, Travessa)"
-          />
-          <input class="numero" type="text" placeholder="Número" />
-          <input class="complemento" type="text" placeholder="Complemento" />
-          <input class="municipio" type="text" placeholder="Município" />
-          <input class="estado" type="text" placeholder="Estado" />
-          <input class="pais" type="text" placeholder="País" />
+          <div class="informacao__do__endereco">
+            <input id="cep" type="text" placeholder="CEP" />
+            <label for="cep">CEP</label>
+          </div>
+
+          <div class="informacao__do__endereco">
+            <input
+              id="logradouro"
+              type="text"
+              placeholder="Logradouro (Rua, Av, Travessa)"
+            />
+            <label for="logradouro">Logradouro</label>
+          </div>
+
+          <div class="informacao__do__endereco">
+            <input id="numero" type="text" placeholder="Número" />
+            <label for="numero">Número</label>
+          </div>
+
+          <div class="informacao__do__endereco">
+            <input id="complemento" type="text" placeholder="Complemento" />
+            <label for="complemento">Complemento</label>
+          </div>
+
+          <div class="informacao__do__endereco">
+            <input id="municipio" type="text" placeholder="Município" />
+            <label for="municipio">Município</label>
+          </div>
+
+          <div class="informacao__do__endereco">
+            <input id="estado" type="text" placeholder="Estado" />
+            <label for="estado">Estado</label>
+          </div>
+
+          <div class="informacao__do__endereco">
+            <input id="pais" type="text" placeholder="País" />
+            <label for="pais">País</label>
+          </div>
         </div>
       </form>
       <Botao
@@ -90,6 +140,17 @@ export default defineComponent({
 .titulo__cadastro {
   margin-left: 44rem;
   margin-bottom: 5rem;
+}
+
+.informacao__do__usuario,
+.informacao__do__endereco {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+label {
+  padding-left: 1.5rem;
 }
 
 input {

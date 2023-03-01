@@ -14,7 +14,7 @@
           placeholder="Digite sua Senha"
         />
       </form>
-      <BotaoPreto class="botaoEntrar" :tituloDoBotao="'Entrar'" />
+      <Botao class="botaoEntrar" :tituloDoBotao="'Entrar'" />
 
       <h4>Ou entre na sua conta utilizando suas redes sociais</h4>
 
@@ -27,7 +27,7 @@
     <div class="novoAqui">
       <h1>Novo por aqui?</h1>
       <h4>Faça o seu cadastro aqui</h4>
-      <BotaoPreto class="botaoCadastro" :tituloDoBotao="'Cadastre-se'" />
+      <Botao class="botaoCadastro" :tituloDoBotao="'Cadastre-se'" />
 
       <h4>Ou cadastre-se utilizando suas redes sociais</h4>
 
@@ -42,16 +42,23 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import BotaoPreto from "../components/BotaoPreto.vue";
+import Botao from "../components/Botao.vue";
 import BotaoRedeSocial from "../components/BotaoRedeSocial.vue";
 
 export default defineComponent({
   name: "LoginView",
-  components: { BotaoPreto, BotaoRedeSocial },
+  components: { Botao, BotaoRedeSocial },
 });
 </script>
 
 <style scoped>
+@import url("https://fonts.cdnfonts.com/css/assistant");
+
+* {
+  font-family: "Assistant", sans-serif;
+  font-weight: 350;
+}
+
 .paginaDeLogin {
   display: flex;
   margin: -8px;

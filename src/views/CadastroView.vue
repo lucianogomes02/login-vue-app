@@ -26,6 +26,14 @@
           <input class="pais" type="text" placeholder="País" />
         </div>
       </form>
+      <Botao
+        class="botao__cadastrar"
+        :tituloDoBotao="'Cadastrar'"
+        :corDoBotao="'#ffffff'"
+        :corDaFonte="'#31ff08'"
+        :borda="'5px'"
+        :corDaBorda="'#31ff08'"
+      />
     </section>
   </main>
 </template>
@@ -33,10 +41,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Cabecalho from "../components/Cabecalho.vue";
+import Botao from "../components/Botao.vue";
 
 export default defineComponent({
   name: "CadastroView",
-  components: { Cabecalho },
+  components: { Cabecalho, Botao },
 });
 </script>
 
@@ -60,12 +69,13 @@ export default defineComponent({
   height: 50rem;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .formulario__cadastro {
   margin-left: 3rem;
-  margin-bottom: 10rem;
+  margin-top: 5rem;
 }
 
 .informacoes__do__usuario,

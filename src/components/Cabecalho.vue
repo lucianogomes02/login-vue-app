@@ -2,21 +2,18 @@
   <header class="cabecalho">
     <nav class="barra__de__navegacao">
       <h4 class="bem__vindo">Bem-vindo, visitante</h4>
-      <BotaoPreto
-        class="botao__de__voltar"
-        :titulo-do-botao="'Voltar'"
-      ></BotaoPreto>
+      <Botao class="botao__de__voltar" :titulo-do-botao="'Voltar'" />
     </nav>
   </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import BotaoPreto from "../components/BotaoPreto.vue";
+import Botao from "./Botao.vue";
 
 export default defineComponent({
   name: "Cabecalho",
-  components: { BotaoPreto },
+  components: { Botao },
 });
 </script>
 

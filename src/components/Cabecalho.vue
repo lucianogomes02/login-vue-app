@@ -4,11 +4,13 @@
       <h4 class="bem__vindo">Bem-vindo, visitante</h4>
       <Botao
         class="botao__de__voltar"
-        :titulo-do-botao="'Voltar'"
-        :largura="'6rem'"
-        :altura="'2rem'"
-        :margemTopo="'0rem'"
-        :caminho="'/'"
+        :botao="{
+          titulo: 'Voltar',
+          altura: '2rem',
+          largura: '6rem',
+          margemTopo: '0rem',
+          caminho: '/',
+        }"
       />
     </nav>
   </header>

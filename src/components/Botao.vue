@@ -1,68 +1,30 @@
 <template>
-  <router-link :to="{ path: caminho }" class="link">
+  <router-link :to="{ path: botao.caminho || '/' }" class="link">
     <button
       class="botao"
       :style="{
-        backgroundColor: corDoBotao,
-        color: corDaFonte,
-        border: borda,
-        borderColor: corDaBorda,
-        width: largura,
-        height: altura,
-        marginTop: margemTopo,
+        backgroundColor: botao.cor,
+        color: botao.corDaFonte,
+        width: botao.largura,
+        height: botao.altura,
+        marginTop: botao.margemTopo,
       }"
     >
-      {{ tituloDoBotao }}
+      {{ botao.titulo }}
     </button>
   </router-link>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, type PropType } from "vue";
+import type Botao from "@/types/Botao";
 
 export default defineComponent({
   name: "Botao",
   props: {
-    tituloDoBotao: {
-      type: String,
+    botao: {
       required: true,
-    },
-    caminho: {
-      type: String,
-      required: false,
-      default: "/",
-    },
-    corDoBotao: {
-      type: String,
-      required: false,
-    },
-    corDaFonte: {
-      type: String,
-      required: false,
-    },
-    tamanhoDaFonte: {
-      type: Number,
-      required: false,
-    },
-    borda: {
-      type: String,
-      required: false,
-    },
-    corDaBorda: {
-      type: String,
-      required: false,
-    },
-    largura: {
-      type: String,
-      required: false,
-    },
-    altura: {
-      type: String,
-      required: false,
-    },
-    margemTopo: {
-      type: String,
-      required: false,
+      type: Object as PropType<Botao>,
     },
   },
 });
@@ -77,5 +39,9 @@ export default defineComponent({
   color: #ffffff;
   background-color: #000;
   border-radius: 41px;
+}
+
+.botao:hover {
+  opacity: 80%;
 }
 </style>

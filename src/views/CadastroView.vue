@@ -8,11 +8,10 @@
       />
       <Botao
         class="botao__cadastrar"
-        :tituloDoBotao="'Cadastrar'"
-        :corDoBotao="'#ffffff'"
-        :corDaFonte="'#31ff08'"
-        :borda="'5px'"
-        :corDaBorda="'#31ff08'"
+        :botao="{
+          titulo: 'Cadastrar',
+          cor: '#19a046',
+        }"
       />
     </section>
   </main>

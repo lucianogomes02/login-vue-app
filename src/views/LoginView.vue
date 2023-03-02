@@ -14,7 +14,12 @@
           placeholder="Digite sua Senha"
         />
       </form>
-      <Botao class="botaoEntrar" :tituloDoBotao="'Entrar'" />
+      <Botao
+        class="botaoEntrar"
+        :botao="{
+          titulo: 'Entrar',
+        }"
+      />
 
       <h4>Ou entre na sua conta utilizando suas redes sociais</h4>
 
@@ -29,8 +34,10 @@
       <h4>Faça o seu cadastro aqui</h4>
       <Botao
         class="botaoCadastro"
-        :tituloDoBotao="'Cadastre-se'"
-        :caminho="'/cadastro'"
+        :botao="{
+          titulo: 'Cadastre-se',
+          caminho: '/cadastro',
+        }"
       />
 
       <h4>Ou cadastre-se utilizando suas redes sociais</h4>

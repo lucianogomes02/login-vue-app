@@ -1,15 +1,20 @@
 <template>
-  <button
-    class="botao"
-    :style="{
-      backgroundColor: corDoBotao,
-      color: corDaFonte,
-      border: borda,
-      borderColor: corDaBorda,
-    }"
-  >
-    {{ tituloDoBotao }}
-  </button>
+  <router-link :to="{ path: caminho }" class="link">
+    <button
+      class="botao"
+      :style="{
+        backgroundColor: corDoBotao,
+        color: corDaFonte,
+        border: borda,
+        borderColor: corDaBorda,
+        width: largura,
+        height: altura,
+        marginTop: margemTopo,
+      }"
+    >
+      {{ tituloDoBotao }}
+    </button>
+  </router-link>
 </template>
 
 <script lang="ts">
@@ -21,6 +26,11 @@ export default defineComponent({
     tituloDoBotao: {
       type: String,
       required: true,
+    },
+    caminho: {
+      type: String,
+      required: false,
+      default: "/",
     },
     corDoBotao: {
       type: String,
@@ -39,6 +49,18 @@ export default defineComponent({
       required: false,
     },
     corDaBorda: {
+      type: String,
+      required: false,
+    },
+    largura: {
+      type: String,
+      required: false,
+    },
+    altura: {
+      type: String,
+      required: false,
+    },
+    margemTopo: {
       type: String,
       required: false,
     },

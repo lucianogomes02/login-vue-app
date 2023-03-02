@@ -2,7 +2,14 @@
   <header class="cabecalho">
     <nav class="barra__de__navegacao">
       <h4 class="bem__vindo">Bem-vindo, visitante</h4>
-      <Botao class="botao__de__voltar" :titulo-do-botao="'Voltar'" />
+      <Botao
+        class="botao__de__voltar"
+        :titulo-do-botao="'Voltar'"
+        :largura="'6rem'"
+        :altura="'2rem'"
+        :margemTopo="'0rem'"
+        :caminho="'/'"
+      />
     </nav>
   </header>
 </template>

@@ -27,7 +27,11 @@
     <div class="novoAqui">
       <h1>Novo por aqui?</h1>
       <h4>Faça o seu cadastro aqui</h4>
-      <Botao class="botaoCadastro" :tituloDoBotao="'Cadastre-se'" />
+      <Botao
+        class="botaoCadastro"
+        :tituloDoBotao="'Cadastre-se'"
+        :caminho="'/cadastro'"
+      />
 
       <h4>Ou cadastre-se utilizando suas redes sociais</h4>
 

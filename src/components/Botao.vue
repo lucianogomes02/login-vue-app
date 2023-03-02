@@ -1,6 +1,6 @@
 <template>
   <button
-    class="botaoPreto"
+    class="botao"
     :style="{
       backgroundColor: corDoBotao,
       color: corDaFonte,
@@ -16,7 +16,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "BotaoPreto",
+  name: "Botao",
   props: {
     tituloDoBotao: {
       type: String,
@@ -47,7 +47,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.botaoPreto {
+.botao {
   margin-top: 1rem;
   border: none;
   width: 10rem;
